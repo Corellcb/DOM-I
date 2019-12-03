@@ -40,3 +40,78 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// Nav
+
+let nav = document.querySelectorAll("nav a");
+nav[0].textContent = "Services";
+nav[1].textContent = "Product";
+nav[2].textContent = "Vision";
+nav[3].textContent = "Features";
+nav[4].textContent = "About";
+nav[5].textContent = "Contact";
+
+nav.forEach(element => {
+  element.style.color = "green";
+})
+
+let navbar = document.querySelector('nav');
+
+let extra = document.createElement('a');
+extra.textContent = 'Extras';
+extra.style.color = 'green';
+
+let name = document.createElement('a');
+name.textContent = 'Corell was here';
+name.style.color = 'green';
+
+navbar.appendChild(name);
+navbar.appendChild(extra);
+
+console.log(name);
+// CTA IMG
+let ctaImg = document.querySelector('#cta-img');
+ctaImg.setAttribute('src', 'img/header-img.png')
+
+// h1
+let h1 = document.querySelector('h1');
+h1.textContent = "DOM IS AWESOME";
+
+//cta 
+let ctaBtn = document.querySelector('.cta button');
+ctaBtn.textContent = "Get Started";
+
+//Main content
+let mainContent = document.querySelectorAll(".main-content  h4");
+mainContent[0].textContent = "Features";
+mainContent[1].textContent = "About";
+mainContent[2].textContent = "Services";
+mainContent[3].textContent = "Product";
+mainContent[4].textContent = "Vision";
+
+let mainContentP = document.querySelectorAll(".main-content  p");
+mainContentP[0].textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+mainContentP[1].textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+mainContentP[2].textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+mainContentP[3].textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+mainContentP[4].textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+
+
+
+//Middle Img
+let middleImg = document.querySelector('.middle-img');
+middleImg.setAttribute('src', 'img/mid-page-accent.jpg');
+
+//Contact
+let contactH4 = document.querySelector('.contact h4');
+contactH4.textContent = 'Contact';
+
+let contactP = document.querySelectorAll('.contact p');
+contactP[0].textContent = "123 Way 456 Street";
+contactP[0].textContent += "Somewhere,USA"
+contactP[1].textContent = "1 (888) 888-8888";
+contactP[2].textContent = "sales@greatidea.io";
+
+//footer
+let footer = document.querySelector('footer p');
+footer.textContent = "Copyright Great Idea! 2018"
