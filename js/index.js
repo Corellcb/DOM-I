@@ -42,20 +42,33 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // Nav
-let nav1 = document.querySelector('nav a:nth-of-type(1)');
-let nav2 = document.querySelector('nav a:nth-of-type(2)');
-let nav3 = document.querySelector('nav a:nth-of-type(3)');
-let nav4 = document.querySelector('nav a:nth-of-type(4)');
-let nav5 = document.querySelector('nav a:nth-of-type(5)');
-let nav6 = document.querySelector('nav a:nth-of-type(6)');
 
-nav1.textContent = "Services";
-nav2.textContent = "Product";
-nav3.textContent = "Vision";
-nav4.textContent = "Features";
-nav5.textContent = "About";
-nav6.textContent = "Contact";
+let nav = document.querySelectorAll("nav a");
+nav[0].textContent = "Services";
+nav[1].textContent = "Product";
+nav[2].textContent = "Vision";
+nav[3].textContent = "Features";
+nav[4].textContent = "About";
+nav[5].textContent = "Contact";
 
+nav.forEach(element => {
+  element.style.color = "green";
+})
+
+let navbar = document.querySelector('nav');
+
+let extra = document.createElement('a');
+extra.textContent = 'Extras';
+extra.style.color = 'green';
+
+let name = document.createElement('a');
+name.textContent = 'Corell was here';
+name.style.color = 'green';
+
+navbar.appendChild(name);
+navbar.appendChild(extra);
+
+console.log(name);
 // CTA IMG
 let ctaImg = document.querySelector('#cta-img');
 ctaImg.setAttribute('src', 'img/header-img.png')
@@ -99,5 +112,6 @@ contactP[0].textContent += "Somewhere,USA"
 contactP[1].textContent = "1 (888) 888-8888";
 contactP[2].textContent = "sales@greatidea.io";
 
+//footer
 let footer = document.querySelector('footer p');
 footer.textContent = "Copyright Great Idea! 2018"
